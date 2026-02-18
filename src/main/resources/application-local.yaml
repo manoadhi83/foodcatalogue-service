@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/foodcatalogue_db
+    username: root
+    password: Scary@123
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
