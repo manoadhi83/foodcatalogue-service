@@ -2,6 +2,11 @@ eureka:
   client:
     service-url:
       defaultZone: ${EUREKA_SERVICE_ADDRESS}
+  instance:
+    hostname: ${EUREKA_INSTANCE_HOSTNAME}
+    prefer-ip-address: ${EUREKA_INSTANCE_PREFERIPADDRESS}
+    instance-id: ${EUREKA_INSTANCE_HOSTNAME}
+    non-secure-port: ${EUREKA_INSTANCE_NONSECUREPORT}
 
 spring:
   datasource:
